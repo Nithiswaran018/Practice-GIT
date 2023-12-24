@@ -1,0 +1,23 @@
+<style>
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+    }
+    .size{
+        width: 100px;
+    }
+</style>
+<div id="box"></div>
+<button onclick="change()" class="size">Change</button>
+
+<script>
+    //selcting button
+
+    var box = document.getElementById("box")
+    function change()
+    {
+        box.style.backgroundColor="yellow"
+    }
+
+</script>
