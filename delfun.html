@@ -3,8 +3,15 @@
 <h1  onclick="deleteitem(event)">Three</h1>
 <h1  onclick="deleteitem(event)">Four</h1>
 <h1  onclick="deleteitem(event)">Six</h1>
-
+<h1 id="result">Name</h1>
+<button onclick="updat(event)">Karthick</button>
 <script>
+    //select h1 Name
+    var result = document.getElementById("result")
+    function update(event)
+    {
+        result.textContent=event.target.textContent
+    }
            function deleteitem(event)
         {
             event.target.remove()
